@@ -1,6 +1,11 @@
+
 * {
     margin: 0;
     padding: 0;
+}
+
+ul {
+    list-style-type: none;
 }
 
 a {
@@ -8,9 +13,15 @@ a {
     text-decoration: none;
 }
 
+body {
+    overflow-y: scroll;
+    min-height: 200vh;
+}
+
 header {
-    background: #333121;
+    background: #000000;
     padding-inline: 16px;
+    padding-bottom: 70px;
 }
 
 /* configuração do nav-bar*/
@@ -24,26 +35,43 @@ nav {
     align-items: center;
 }
 
+section {
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    line-height: 2em;
+    padding-left: 30px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem {
+    background-color: #141414;
+    color: #fff;
+    box-shadow: inset 6px 6px 13px 0px #000000;
+}
+
+section#img {
+    background-image: url('../img/2023-09-19_12-24.png');
+    background-position: center;
+}
+
 .logo {
     font-size: 48px;
     color: #fff;
+    padding-top: 50px;
 }
 
 .nav-list {
     display: flex;
     gap: 32px;
     list-style: none; /* tira as bolinhas da lista */
+    padding-top: 50px;
 }
 
 .nav-list a {
     font-size: 18px;
     color: #fff;
     padding-block: 16px;
-}
-
-.hero {
-    height: calc(100vh - 70px);
-    background: #404040;
 }
 
 .hamburger {
