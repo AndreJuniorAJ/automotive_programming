@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Lora&display=swap');
+
+
+:root{
+    --fonte: 'Inclusive Sans', sans-serif;
+    --fonte7: 'Poppins', sans-serif;
+    --fonte9: 'Poppins', sans-serif;
+}
 
 * {
     margin: 0;
@@ -13,9 +22,17 @@ a {
     text-decoration: none;
 }
 
-body {
+html, body {
     overflow-y: scroll;
     min-height: 200vh;
+    font-family: var(--fonte);
+    font-size: 12.5px;
+}
+
+@media (max-width: 750px) {
+    body {
+        font-size: 0.8em; /* 80% do tamanho original */
+    }
 }
 
 header {
@@ -36,24 +53,66 @@ nav {
 }
 
 section {
-    padding-top: 30vh;
     padding-bottom: 30vh;
     line-height: 2em;
     padding-left: 30px;
-    background-size: cover;
-    background-attachment: fixed;
+}
+
+/* imagem com mecânico */
+
+section.normal {
+    display: flex;
+    align-items: left;
+    background-color: #c94304;
+
+}
+
+section.normal p {
+    line-height: 3em;
+    word-break: break-all;
+    background-color: #00000056;
+    color: #fff;
+}
+
+
+
+
+section.normal {
+    padding-top: 10vh;
+}
+
+section#meca {
+    background-image: url(../img/mecanica-tecnologica.jpg);
+    background-size: 80%;
+    background-position: right center;
+    background-repeat: no-repeat;
 }
 
 section.imagem {
-    background-color: #141414;
+    padding-top: 10vh;
     color: #fff;
     box-shadow: inset 6px 6px 13px 0px #000000;
 }
 
-section#img {
-    background-image: url('../img/2023-09-19_12-24.png');
-    background-position: center;
+/* imagem com parallax */
+
+section.imagem > p {
+    width: 500px;
 }
+
+section.imagem > h1 {
+    width: 500px;
+}
+
+
+section#img {
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/2023-09-19_12-24.png'); /* linear-gradiente: pelicula */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 
 .logo {
     font-size: 48px;
@@ -65,7 +124,7 @@ section#img {
     display: flex;
     gap: 32px;
     list-style: none; /* tira as bolinhas da lista */
-    padding-top: 50px;
+    padding-top: 50px; /* afasta do topo */
 }
 
 .nav-list a {
