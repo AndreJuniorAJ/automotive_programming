@@ -23,7 +23,6 @@ a {
 }
 
 html, body {
-    overflow-y: scroll;
     min-height: 200vh;
     font-family: var(--fonte);
     font-size: 12.5px;
@@ -72,10 +71,8 @@ section.normal p {
     word-break: break-all;
     background-color: #00000056;
     color: #fff;
+    
 }
-
-
-
 
 section.normal {
     padding-top: 10vh;
@@ -217,4 +214,13 @@ section#img {
     .nav-list.active .hamburger::after {
         transform: rotate(-135deg);
     }
+}
+
+/* Roda pé */
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
 }
