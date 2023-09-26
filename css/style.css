@@ -222,11 +222,11 @@ footer {
     background-color: #000000;
     text-align: center;
     color: #fff;
-    padding: 50px 0/*lateral*/;
+    padding: 50px 0;
 }
 
 footer p {
-    margin: 20px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -250,6 +250,7 @@ footer input, footer textarea {
 }
 
 .btn:hover {
+
     color: #fff;
     background-color: #c94304;
 }
