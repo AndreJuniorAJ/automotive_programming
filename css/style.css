@@ -11,6 +11,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 ul {
@@ -52,9 +53,9 @@ nav {
 }
 
 section {
-    padding-bottom: 30vh;
+    /*padding-bottom: 30vh;*/
     line-height: 2em;
-    padding-left: 30px;
+      
 }
 
 /* imagem com mecânico */
@@ -86,9 +87,12 @@ section#meca {
 }
 
 section.imagem {
-    padding-top: 10vh;
+    /*padding-top: 1vh;*/
     color: #fff;
     box-shadow: inset 6px 6px 13px 0px #000000;
+    position: relative;
+    
+    
 }
 
 /* imagem com parallax */
@@ -102,13 +106,78 @@ section.imagem > h1 {
 }
 
 
-section#img {
+/*section#img {
     
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/2023-09-19_12-24.png'); /* linear-gradiente: pelicula */
-    background-position: center;
+   /* background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}*/
+
+/* slider */
+
+#carousel {
+    display: flex;
+    width: 98.8vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
 }
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    /*font-size:20px */
+    line-height: 250px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    transition: all 200ms ease-in-out;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    bottom: 0;
+
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    opacity: 1;
+}
+
+
+.item {
+    flex: none;
+    width: 100%;
+    height: 600px;
+    scroll-snap-align: start;
+
+    pointer-events: none;
+}
+
+.item > img {
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+}
+
+
 
 
 .logo {

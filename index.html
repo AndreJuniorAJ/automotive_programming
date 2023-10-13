@@ -20,12 +20,14 @@
     </header>
     <main class="hero"></main>
     <section class="imagem" id="img">
-
-        <h1>Testes</h1>
-        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
-            Cumque accusamus id voluptates ea, aperiam rem excepturi<br> 
-            optio cum nam eos provident, rerum autem molestiae eaque
-        </p>
+        <div id="carousel">
+            <button class="arrow-left control" aria-label="Previous image">◀</button>
+            <button class="arrow-right control" aria-label="Next Image">▶</button>
+            <div class="item"><img src="https://unsplash.it/1600/?image=950" class="log current-item"></div>
+            <div class="item"><img src="https://unsplash.it/1600/?image=930" class="log current-item"></div>
+            <div class="item"><img src="https://unsplash.it/1600/?image=990" class="log current-item"></div>
+            <div class="item"><img src="https://unsplash.it/1600/?image=980" class="log current-item"></div>
+        </div>
     </section>
     <section class="normal" id="meca">
         <div>
@@ -49,7 +51,7 @@
         </div>
     </section>
 
-<script src="./js/app.js"></script>
+
 
 <footer>
 
@@ -72,5 +74,7 @@
         Site Criado para <span class="desenvolvido">Projeto Eduacacional</span>
     </p>
 </footer>
+
+<script src="./js/app.js"></script>
 </body>
 </html>
