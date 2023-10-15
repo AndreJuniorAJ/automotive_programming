@@ -2,18 +2,20 @@ const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector(".nav-list");
 const controls = document.querySelectorAll(".control");
 const items = document.querySelectorAll(".log");
+
+let currentItem = 0;
 const maxItems = items.length;
 
 controls.forEach((control) => {
     control.addEventListener("click", () => {
         const isLeft = control.classList.contains("arrow-left");
-        console.log("control clicked", isLeft);
+        
 
         if (isLeft) {
             currentItem -= 1;
-        } else {
+          } else {
             currentItem += 1;
-        }
+          }
 
         if (currentItem >= maxItems) {
             currentItem = 0;
@@ -24,6 +26,12 @@ controls.forEach((control) => {
         }
         console.log("control", isLeft, currentItem);
 
+        items.forEach(log => log.classList.remove('current-item'));
+
+        items[currentItem].scrollIntoView({
+            inline: "center",
+            behavior: "smooth",
+        });
     })
 })
 
