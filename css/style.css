@@ -199,6 +199,11 @@ section.imagem > h1 {
     padding-block: 16px;
 }
 
+.nav-list a:hover {
+    color: #c94304;
+}
+
+
 .hamburger {
     display: none;
     border: none;
@@ -246,6 +251,10 @@ section.imagem > h1 {
     .nav-list a {
         font-size: 24px;
         opacity: 0;
+    }
+
+    .nav-list a:hover {
+        color: #c94304;
     }
 
     .nav-list li:nth-child(1) a {
