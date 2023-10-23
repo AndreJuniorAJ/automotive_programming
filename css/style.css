@@ -300,27 +300,12 @@ footer {
     background-color: #000000;
     text-align: center;
     color: #fff;
-    padding: 50px 0;
+    padding: 5px;
 }
 
 footer p {
     margin-top: 20px;
-    margin-bottom: 50px;
-}
-
-footer form {
-    width: 500px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-footer input, footer textarea {
-    margin-bottom: 20px;
-    width: 100%;
-    display: block;
-    padding: 15px;
-    box-sizing: border-box;
-    border: none;
+    margin-bottom: 5px;
 }
 
 .desenvolvido {

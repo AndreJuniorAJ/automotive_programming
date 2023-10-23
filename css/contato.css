@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+
+    height: 96.9vh;
+    background-color: #000000;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+}
+
+section p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+section form {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section input, footer textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+}
