@@ -3,10 +3,14 @@
     padding: 0;
 }
 
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #222438 16.62%, #030305 85.61%)
+}
+
 section {
 
     height: 96.9vh;
-    background-color: #000000;
     text-align: center;
     color: #fff;
     padding: 10px 0;
