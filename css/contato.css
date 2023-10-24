@@ -8,6 +8,33 @@ body {
     background: linear-gradient(68.15deg, #222438 16.62%, #030305 85.61%)
 }
 
+a {
+    text-decoration: none
+}
+
+a:hover {
+    color: #c94304;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.3);
+    padding-inline: 16px;
+    padding-bottom: 70px;
+}
+
+.cabecalho {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cabecalho-menu-item {
+    color: aliceblue;
+    font-size: 25px;
+}
+
 section {
 
     height: 96.9vh;
@@ -18,7 +45,7 @@ section {
 
 section p {
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 section form {
@@ -27,7 +54,7 @@ section form {
     margin-left: auto;
 }
 
-section input, footer textarea {
+section input, form textarea {
     margin-bottom: 20px;
     width: 100%;
     display: block;
