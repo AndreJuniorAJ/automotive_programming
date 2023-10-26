@@ -28,6 +28,7 @@ html, body {
     font-family: var(--fonte);
     font-size: 12.5px;
     overflow-x: hidden;
+    background-color: #000000;
 }
 
 @media (max-width: 750px) {
@@ -225,6 +226,53 @@ section.video {
     margin-top: 25px;
 }
 
+
+.texto-final {
+    color: #fff;
+    padding: 15px;
+}
+
+.titulo-final {
+    text-align: center;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+.paragrafo-final {
+    text-align: start;
+}
+
+.titulo-final::selection {
+    color: #c94304;
+}
+
+.paragrafo-final::selection {
+    color: #c94304;
+}
+
+/* Roda pé */
+
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+}
+
+footer p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.desenvolvido {
+    font-weight: bold;
+}
+
+.btn:hover {
+
+    color: #fff;
+    background-color: #c94304;
+}
+
 @media ( max-width: 750px ) {
 
     .hamburger {
@@ -293,28 +341,4 @@ section.video {
     .nav-list.active .hamburger::after {
         transform: rotate(-135deg);
     }
-}
-
-/* Roda pé */
-
-footer {
-    background-color: #000000;
-    text-align: center;
-    color: #fff;
-    padding: 5px;
-}
-
-footer p {
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-
-.desenvolvido {
-    font-weight: bold;
-}
-
-.btn:hover {
-
-    color: #fff;
-    background-color: #c94304;
 }
