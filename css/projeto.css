@@ -24,3 +24,72 @@ a > img {
 header {
     background: rgba(0, 0, 0, 0.3);
 }
+
+.container {
+    
+    width: 920px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h2 {
+    color: #c94304;
+}
+
+.data-post {
+    font-size: 0.8em;
+}
+
+.caixas {
+    width: 660px;
+    float: left;
+    color: #fff;
+    
+}
+
+.caixa-1 {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #333232;
+}
+
+.caixa-1 > img {
+    padding: 10px;
+}
+
+.caixa-2 {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #333232;
+}
+
+.caixa-2 > img {
+    padding: 10px;
+}
+
+.caixa-3 {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #333232;
+}
+
+.caixa-3 > img {
+    padding: 10px;
+}
+
+.caixa-4 {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #333232;
+}
+
+.caixa-4 > img {
+    padding: 10px;
+}
+
+.barra-lateral {
+    width: 245px;
+    background-color: #c7c1c1;
+    float: right;
+}
+
