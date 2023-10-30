@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgba(63, 57, 57, 0.459);
+    background: linear-gradient(68.15deg, #4d4d5a 16.62%, #3b3b47 85.61%);  /*rgba(63, 57, 57, 0.459)*/
 }
 
 header {
@@ -89,7 +89,26 @@ h2 {
 
 .barra-lateral {
     width: 245px;
-    background-color: #c7c1c1;
     float: right;
+    padding-right: 150px;
+    
 }
 
+.caixa-lateral {
+    background-color: #504e4e;
+    width: 140%;
+    height: 350px;
+    padding: 10px;
+
+}
+
+.caixa-lateral h3 {
+    background: #c94304;
+    text-align: center;
+
+}
+
+.caixa-lateral p {
+    padding-top: 3px;
+    color: #fff;
+}
