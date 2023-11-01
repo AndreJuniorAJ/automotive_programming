@@ -97,9 +97,13 @@ h2 {
 .caixa-lateral {
     background-color: #504e4e;
     width: 140%;
-    height: 350px;
     padding: 10px;
+    border-bottom: 1px solid #fff;
 
+}
+
+.caixa-lateral:last-child {
+    border: none;
 }
 
 .caixa-lateral h3 {
@@ -108,7 +112,61 @@ h2 {
 
 }
 
+.caixa-lateral h4 {
+    color: #fff;
+    text-align: center;
+    border: 1px solid #000;
+    background: #000;
+}
+
 .caixa-lateral p {
     padding-top: 3px;
     color: #fff;
 }
+
+hr {
+    width: 361px;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        width: 220%;
+    }
+    a > img {
+        height: 50px;
+    }
+
+    .container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .caixas {
+        width: 100%;
+        float: none;
+    }
+
+    .caixa-1,
+    .caixa-2,
+    .caixa-3,
+    .caixa-4 {
+    width: 100%;
+    margin-right: 0;
+    float: none;
+}
+
+.caixa-1 > img,
+.caixa-2 > img,
+.caixa-3 > img,
+.caixa-4 > img {
+    height: 80%;
+    width: 80%;
+}
+
+.barra-lateral {
+    width: 100%;
+    float: none;
+    padding-right: 0;
+}
+
+}   
