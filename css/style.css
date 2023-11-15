@@ -85,12 +85,20 @@ section {
       
 }
 
+section.imagem {
+    /*padding-top: 1vh;*/
+    color: #fff;
+    box-shadow: inset 6px 6px 13px 0px #000000;
+    position: relative;
+    padding-bottom: 9px;
+}
+
 /* imagem com mecânico */
 section.normal {
     display: flex;
     align-items: left;
     background-color: #c94304;
-
+    padding-right: 20px;
 }
 
 section.normal p {
@@ -101,25 +109,25 @@ section.normal p {
     
 }
 
+section.normal h4 {
+    font-size: 25px;
+    line-height: 3em;
+    word-break: break-all;
+    background-color: #00000056;
+    color: #e9d5ce;
+}
+
 section.normal {
     padding-top: 10vh;
 }
 
 section#meca {
-    background-image: url(../img/mecanica-tecnologica.jpg);
+    background-image: url(../img/poluicao-2.webp);
     background-size: 80%;
     background-position: right center;
     background-repeat: no-repeat;
 }
 
-section.imagem {
-    /*padding-top: 1vh;*/
-    color: #fff;
-    box-shadow: inset 6px 6px 13px 0px #000000;
-    position: relative;
-    
-    
-}
 
 /* imagem com parallax */
 
@@ -139,6 +147,32 @@ section.imagem > h1 {
     overflow-x: hidden;
     overflow-y: hidden;
     
+}
+
+#carousel a {
+    color: white;
+    text-decoration: none;
+}
+
+#carousel a:hover {
+    color: #c94304;
+}
+
+.carousel-text {
+    position: absolute;
+    bottom: 10px; /* Ajuste conforme necessário para a distância do fundo */
+    right: 10px; /* Ajuste conforme necessário para a distância da direita */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    max-width: 300px; /* Ajuste conforme necessário para a largura máxima do texto */
+    text-align: right; /* Ajuste conforme necessário para o alinhamento do texto */
+    color: #fff; /* Ajuste conforme necessário para a cor do texto */
+    display: none; /* Inicialmente, ocultamos todos os textos */
+}
+
+.item:hover .carousel-text,
+.item.active .carousel-text {
+    display: block;
 }
 
 .arrow-left,
