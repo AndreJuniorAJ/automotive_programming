@@ -31,11 +31,6 @@ html, body {
     background-color: #000000;
 }
 
-@media (max-width: 750px) {
-    body {
-        font-size: 0.8em; /* 80% do tamanho original */
-    }
-}
 
 header {
     background: #000000;
@@ -106,7 +101,7 @@ section.normal p {
     word-break: break-all;
     background-color: #00000056;
     color: #fff;
-    
+    font-size: 15px;
 }
 
 section.normal h4 {
@@ -258,7 +253,10 @@ section.video {
 
 .video-player {
     margin-top: 25px;
+   
 }
+
+
 
 
 .texto-final {
@@ -274,6 +272,7 @@ section.video {
 
 .paragrafo-final {
     text-align: start;
+    font-size: 15px;
 }
 
 .titulo-final::selection {
@@ -320,7 +319,7 @@ footer p {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: #404040;
+        background: #000000;
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
 
@@ -374,5 +373,47 @@ footer p {
 
     .nav-list.active .hamburger::after {
         transform: rotate(-135deg);
+    }
+
+    section.normal {
+        flex-direction: column; /* Mudar para uma disposição de coluna em telas menores */
+        padding: 20px; /* Adicionar um espaçamento geral */
+    }
+
+    section.normal h4,
+    section.normal p {
+        font-size: 10px; /* Reduzir o tamanho da fonte em telas menores */
+        line-height: 2em; /* Ajustar a altura da linha conforme necessário */
+    }
+
+    section#meca {
+        background-position: right; /* Centralizar a imagem de fundo */
+        background-size: 100vw; /* Cobrir toda a largura e altura da seção com a imagem de fundo */
+    }
+
+    .video-player {
+        width: 100%;
+        max-width: 560px; /* Defina um tamanho máximo para o vídeo para evitar que ele fique muito grande */
+        margin-top: 25px;
+    }
+
+    .video-player iframe {
+        max-width: 100%;
+    }
+    
+    section.texto-final {
+        max-width: 750px; /* Defina uma largura máxima para o conteúdo */
+        margin: 0 auto; /* Centralize a seção */
+        padding: px; /* Adicione algum espaço interno */
+    
+        /* Adapte o tamanho do texto para dispositivos menores */
+        font-size: 13px;
+
+        line-height: 2em;
+    
+        /* Adicione algum espaço abaixo de cada parágrafo para melhor legibilidade */
+        p.paragrafo-final {
+            margin-bottom: 15px;
+        }
     }
 }
