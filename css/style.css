@@ -49,6 +49,7 @@ nav {
     align-items: center;
 }
 
+
 .logo {
     /*font-size: 48px;
     color: #fff;
@@ -155,14 +156,14 @@ section.imagem > h1 {
 
 .carousel-text {
     position: absolute;
-    bottom: 10px; /* Ajuste conforme necessário para a distância do fundo */
-    right: 10px; /* Ajuste conforme necessário para a distância da direita */
+    bottom: 10px; 
+    right: 10px; 
     background: rgba(0, 0, 0, 0.7);
     padding: 15px;
-    max-width: 300px; /* Ajuste conforme necessário para a largura máxima do texto */
-    text-align: right; /* Ajuste conforme necessário para o alinhamento do texto */
-    color: #fff; /* Ajuste conforme necessário para a cor do texto */
-    display: none; /* Inicialmente, ocultamos todos os textos */
+    max-width: 300px; 
+    text-align: right; 
+    color: #fff; 
+    display: none; 
 }
 
 .item:hover .carousel-text,
@@ -255,8 +256,6 @@ section.video {
     margin-top: 25px;
    
 }
-
-
 
 
 .texto-final {
@@ -361,7 +360,7 @@ footer p {
     }
     
     .nav-list.active .hamburger {
-        position: fixed;
+        position: relative;
         top: 26px;
         right: 16px;
         border-top-color: transparent;
@@ -374,6 +373,8 @@ footer p {
     .nav-list.active .hamburger::after {
         transform: rotate(-135deg);
     }
+
+    
 
     section.normal {
         flex-direction: column; /* Mudar para uma disposição de coluna em telas menores */
@@ -406,12 +407,10 @@ footer p {
         margin: 0 auto; /* Centralize a seção */
         padding: px; /* Adicione algum espaço interno */
     
-        /* Adapte o tamanho do texto para dispositivos menores */
         font-size: 13px;
 
         line-height: 2em;
     
-        /* Adicione algum espaço abaixo de cada parágrafo para melhor legibilidade */
         p.paragrafo-final {
             margin-bottom: 15px;
         }
