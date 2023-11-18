@@ -63,7 +63,7 @@ section input, form textarea {
     border: none;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     section form {
         max-width: 90%; /* Faça o formulário ocupar 100% da largura em telas menores */
     }
